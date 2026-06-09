@@ -1615,8 +1615,6 @@ button {
     margin: 0;
     font-weight: var(--font-weight-medium);
 }
-    text-align: center;
-}
 
 .intro-text {
     font-size: var(--font-size-lg);
