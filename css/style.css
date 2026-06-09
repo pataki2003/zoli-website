@@ -835,36 +835,66 @@ button {
 /* ============================================
    ABOUT PAGE - Continued in next section
    ============================================ */
-.about-grid {
+/* About Intro - Közös nagy panel megoldás */
+.about-intro-wrapper {
+    background: var(--color-white);
+    border-radius: var(--radius-2xl);
+    padding: var(--spacing-3xl);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.1);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.about-intro-grid {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.2fr;
     gap: var(--spacing-3xl);
     align-items: start;
 }
 
-.about-image img {
-    border-radius: var(--radius-2xl);
-    box-shadow: var(--shadow-lg);
-    width: 100%;
-    object-fit: cover;
+/* Fotós kártya - nagyobb és erősebb */
+.about-photo-card {
+    position: relative;
 }
 
-.about-content {
+.about-photo-card .placeholder-image {
+    background: linear-gradient(135deg, var(--color-bg-section) 0%, var(--color-gray-lightest) 100%);
+    border-radius: var(--radius-xl);
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(226, 232, 240, 0.6);
+    transition: all var(--transition-base);
+}
+
+.about-photo-card .placeholder-image:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 12px rgba(163, 230, 53, 0.15);
+}
+
+.about-photo-card .placeholder-content {
+    text-align: center;
+}
+
+.about-photo-card .placeholder-icon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.6;
+}
+
+.about-photo-card .placeholder-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-light);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Szöveg panel */
+.about-text-panel {
     display: flex;
     flex-direction: column;
 }
 
-/* Intro Panel - Bemutatkozó szekció kiemelése */
-.intro-panel {
-    background: var(--color-white);
-    border-radius: var(--radius-2xl);
-    padding: var(--spacing-3xl);
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
-    border: 1px solid rgba(226, 232, 240, 0.8);
-    border-left: 4px solid var(--color-accent);
-}
-
-.intro-panel .badge {
+.about-text-panel .badge {
     margin-bottom: var(--spacing-md);
 }
 
@@ -1973,7 +2003,7 @@ button {
     
     .hero-grid,
     .intro-grid,
-    .about-grid,
+    .about-intro-grid,
     .service-grid,
     .service-grid.reverse {
         grid-template-columns: 1fr;
@@ -2100,6 +2130,23 @@ button {
     
     .faq-grid {
         grid-template-columns: 1fr;
+    
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .about-photo-card .placeholder-image {
+        min-height: 300px;
+    }
+    
+    .intro-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .intro-copy p {
+        font-size: var(--font-size-base);
+    }
     }
     
     /* Process panel */
