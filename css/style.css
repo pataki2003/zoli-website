@@ -1275,8 +1275,8 @@ button {
     align-items: center;
     gap: var(--spacing-sm);
     padding: var(--spacing-md) var(--spacing-lg);
-    background: var(--color-cream-light);
-    border-left: 3px solid var(--color-primary);
+    background: var(--color-bg-section);
+    border-left: 3px solid var(--color-border);
     border-radius: var(--radius-md);
     max-width: 800px;
     margin: 0 auto;
@@ -1284,7 +1284,7 @@ button {
 
 .pricing-note-subtle .icon {
     flex-shrink: 0;
-    color: var(--color-accent-dark);
+    color: var(--color-text-light);
 }
 
 .pricing-note-subtle p {
