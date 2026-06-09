@@ -44,10 +44,10 @@
     /* Oldal háttér gradient - Finom vertikális átmenet */
     --gradient-page: linear-gradient(
         180deg,
-        #f7f9fc 0%,
-        #f1f4f8 35%,
-        #edf2f7 70%,
-        #e7edf4 100%
+        #f4f7fb 0%,
+        #eef3f8 35%,
+        #e8eef5 70%,
+        #e2eaf3 100%
     );
     
     /* Tipográfia */
@@ -858,12 +858,21 @@ button {
 .philosophy-section,
 .experience-section,
 .why-me-section {
+    background: transparent;
+}
+
+.experience-panel {
     background: var(--color-white);
+    border-radius: var(--radius-2xl);
+    padding: var(--spacing-3xl);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .experience-content {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 100%;
 }
 
 .experience-item {
@@ -871,6 +880,10 @@ button {
     gap: var(--spacing-xl);
     align-items: flex-start;
     margin-bottom: var(--spacing-2xl);
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
 }
 
 .experience-icon {
@@ -898,9 +911,17 @@ button {
 
 .why-me-item {
     padding: var(--spacing-xl);
-    background: var(--color-bg-section);
+    background: var(--color-white);
     border-radius: var(--radius-lg);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
     border-left: 4px solid var(--color-accent);
+    transition: all var(--transition-base);
+}
+
+.why-me-item:hover {
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+    transform: translateY(-2px);
 }
 
 .why-me-item h3 {
@@ -2081,6 +2102,10 @@ button {
     }
     
     /* Experience */
+    .experience-panel {
+        padding: var(--spacing-2xl) var(--spacing-lg);
+    }
+    
     .experience-item {
         flex-direction: column;
         text-align: center;
