@@ -410,6 +410,14 @@ button {
 .page-subtitle {
     font-size: var(--font-size-xl);
     opacity: 0.95;
+
+.page-intro-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-light);
+    line-height: var(--line-height-relaxed);
+    max-width: 800px;
+    margin: var(--spacing-lg) auto 0;
+}
 }
 
 /* ============================================
@@ -1385,6 +1393,206 @@ button {
 .intro-content-center {
     max-width: 800px;
     margin: 0 auto;
+
+/* ============================================
+   FEATURED PACKAGE - Enhanced All In
+   ============================================ */
+.featured-package-section {
+    background: var(--color-bg-section);
+}
+
+.section-header.centered {
+    text-align: center;
+}
+
+.featured-package-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.featured-package-card {
+    background: var(--color-white);
+    border-radius: var(--radius-2xl);
+    padding: var(--spacing-3xl);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+    border: 3px solid var(--color-accent);
+    position: relative;
+    transition: all var(--transition-base);
+}
+
+.featured-package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(15, 23, 42, 0.18);
+    border-color: var(--color-accent-dark);
+}
+
+.featured-package-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 2px solid var(--color-bg-section);
+}
+
+.featured-package-title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.featured-package-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-light);
+}
+
+.featured-package-price {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.featured-package-price .price-amount {
+    font-size: 4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.featured-package-price .price-currency {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-light);
+    margin-left: var(--spacing-sm);
+}
+
+.featured-package-savings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-xl);
+    background: linear-gradient(135deg, var(--color-accent-light) 0%, var(--color-accent) 100%);
+    color: var(--color-dark);
+    border-radius: var(--radius-full);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+    margin: 0 auto var(--spacing-2xl);
+    max-width: fit-content;
+    box-shadow: 0 4px 12px rgba(163, 230, 53, 0.3);
+}
+
+.featured-package-savings .icon {
+    color: var(--color-dark);
+}
+
+.featured-package-content {
+    margin: var(--spacing-2xl) 0;
+}
+
+.content-heading {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.package-includes {
+    display: grid;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.package-includes .include-item {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: flex-start;
+    padding: var(--spacing-lg);
+    background: var(--color-bg-section);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-accent);
+    transition: all var(--transition-base);
+}
+
+.package-includes .include-item:hover {
+    background: var(--color-white);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    transform: translateX(5px);
+}
+
+.package-includes .include-item .icon {
+    flex-shrink: 0;
+    color: var(--color-accent);
+    margin-top: 2px;
+}
+
+.package-includes .include-text strong {
+    display: block;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.package-includes .include-text p {
+    color: var(--color-text-light);
+    font-size: var(--font-size-base);
+    margin: 0;
+}
+
+/* ============================================
+   NOTICE BOX - Enhanced visibility
+   ============================================ */
+.notice-box {
+    display: flex;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    border: 2px solid var(--color-border);
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-md);
+}
+
+.notice-box.strong {
+    border-left: 5px solid var(--color-secondary);
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+.notice-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-secondary);
+    color: var(--color-white);
+    border-radius: var(--radius-lg);
+}
+
+.notice-icon .icon {
+    color: var(--color-white);
+}
+
+.notice-content {
+    flex: 1;
+}
+
+.notice-title {
+    display: block;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.notice-text {
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
+    line-height: var(--line-height-relaxed);
+    margin: 0;
+}
     text-align: center;
 }
 
@@ -2017,6 +2225,14 @@ button {
         grid-template-columns: 1fr;
         gap: var(--spacing-2xl);
     }
+    
+    .featured-package-card {
+        padding: var(--spacing-2xl);
+    }
+    
+    .featured-package-price .price-amount {
+        font-size: 3rem;
+    }
 }
 
 /* ============================================
@@ -2179,6 +2395,36 @@ button {
     
     .cta-panel-buttons {
         flex-direction: column;
+    
+    .featured-package-card {
+        padding: var(--spacing-xl);
+    }
+    
+    .featured-package-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .featured-package-price .price-amount {
+        font-size: 2.5rem;
+    }
+    
+    .package-includes {
+        gap: var(--spacing-md);
+    }
+    
+    .package-includes .include-item {
+        padding: var(--spacing-md);
+    }
+    
+    .notice-box {
+        flex-direction: column;
+        padding: var(--spacing-lg);
+        text-align: center;
+    }
+    
+    .notice-icon {
+        margin: 0 auto;
+    }
     }
     
     .cta-panel-buttons .btn {
