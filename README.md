@@ -143,4 +143,4 @@ Ez a projekt Nádasdi Zoltán tulajdona. Minden jog fenntartva.
 
 **Verzió:** 1.0.0  
 **Utolsó frissítés:** 2026. június 9.  
-**Készítette:** Bob (AI Assistant)
+**Készítette:** Pataki Attila Bence
