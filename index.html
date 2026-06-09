@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nádasdi Zoltán személyi edző - Személyre szabott edzésterv azoknak, akik fogyni, izmosodni vagy formásodni szeretnének.">
+    <title>Nádasdi Zoltán - Személyi Edző</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header és Navigáció -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1 class="logo">Nádasdi Zoltán</h1>
+                    <p class="logo-subtitle">Személyi Edző</p>
+                </div>
+                
+                <!-- Hamburger menü gomb mobilra -->
+                <button class="nav-toggle" id="navToggle" aria-label="Menü megnyitása">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Navigációs menü -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Főoldal</a></li>
+                    <li><a href="rolam.html" class="nav-link">Rólam</a></li>
+                    <li><a href="szolgaltatasok.html" class="nav-link">Szolgáltatások</a></li>
+                    <li><a href="cikkek.html" class="nav-link">Cikkek</a></li>
+                    <li><a href="kapcsolat.html" class="nav-link">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Szekció - Két oszlopos -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Bal oldal: Szöveg -->
+                <div class="hero-content">
+                    <span class="hero-badge">✨ Személyi Edző</span>
+                    <h2 class="hero-title">Kezdj el magabiztosan edzeni</h2>
+                    <p class="hero-subtitle">Segítek, hogy tudd mit, hogyan és miért csinálsz az edzőteremben – akár most kezded, akár újrakezdenéd.</p>
+                    
+                    <div class="hero-chips">
+                        <span class="hero-chip">🎯 Kezdőbarát</span>
+                        <span class="hero-chip">💪 Személyre szabott</span>
+                        <span class="hero-chip">📈 Eredményorientált</span>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="kapcsolat.html" class="btn btn-primary btn-large">Jelentkezem konzultációra</a>
+                        <a href="szolgaltatasok.html" class="btn btn-secondary btn-large">Szolgáltatások</a>
+                    </div>
+                </div>
+                
+                <!-- Jobb oldal: Kép -->
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-card">
+                        <img src="assets/images/trainer-hero.jpg" alt="Nádasdi Zoltán személyi edző">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rövid bemutatkozó szekció -->
+    <section class="section compact intro-section">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-image">
+                    <div class="placeholder-image">
+                        <div class="placeholder-content">
+                            <div class="placeholder-icon">📸</div>
+                            <div class="placeholder-text">Edzői fotó helye</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-content">
+                    <span class="badge badge-light">Rólam</span>
+                    <h2 class="section-title">Szia, Zoltán vagyok!</h2>
+                    <p>Nem kell profinak lenned ahhoz, hogy elkezdj edzeni. Az első lépés pont arról szól, hogy közösen megnézzük, honnan indulsz, mire van szükséged, és hogyan tudsz biztonságosan fejlődni.</p>
+                    <p>Azért lettem személyi edző, mert sokszor láttam, hogy vendégekkel nem foglalkoznak eléggé. Én olyan edzői hozzáállást szeretnék képviselni, ahol te is érted, mit csinálsz.</p>
+                    <a href="rolam.html" class="btn btn-secondary">Tudj meg többet rólam</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Segítek, ha... szekció -->
+    <section class="section compact target-audience">
+        <div class="container">
+            <div class="section-header compact">
+                <span class="badge badge-light">Kinek szól?</span>
+                <h2 class="section-title">Segítek, ha...</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">🏋️</div>
+                    <h3 class="card-title">Most kezded</h3>
+                    <p class="card-text">Még sosem edzetél rendszeresen, vagy most kezded újra. Megtanítom a helyes technikát és felépítem az alapokat.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">Van célod</h3>
+                    <p class="card-text">Fogyni, izmosodni vagy formásodni szeretnél, de eddig nem sikerült egyedül. Közösen megtervezzük az utat.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💡</div>
+                    <h3 class="card-title">Nem tudod, mit csinálj</h3>
+                    <p class="card-text">Bizonytalan vagy a gyakorlatokban, nem tudod, hogyan állítsd össze az edzéstervet. Segítek eligazodni.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hogyan zajlik az első alkalom - Panelben -->
+    <section class="section compact process-section">
+        <div class="container">
+            <div class="process-panel">
+                <div class="section-header compact">
+                    <span class="badge badge-light">Folyamat</span>
+                    <h2 class="section-title">Hogyan zajlik az első alkalom?</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <div class="process-content">
+                            <h3 class="process-title">Jelentkezés</h3>
+                            <p class="process-text">Írj nekem, egyeztetünk egy időpontot az első konzultációra.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <div class="process-content">
+                            <h3 class="process-title">Állapotfelmérés</h3>
+                            <p class="process-text">Megbeszéljük a céljaidat és felmérjük a jelenlegi állapotot.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <div class="process-content">
+                            <h3 class="process-title">Terv készítése</h3>
+                            <p class="process-text">Elkészítem a személyre szabott edzéstervet.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">4</div>
+                        <div class="process-content">
+                            <h3 class="process-title">Kezdjük el!</h3>
+                            <p class="process-text">Elindulunk a cél felé, minden edzésen támogatlak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GYIK szekció -->
+    <section class="section compact faq-section">
+        <div class="container">
+            <div class="section-header compact">
+                <span class="badge badge-light">GYIK</span>
+                <h2 class="section-title">Gyakori kérdések</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">Mennyibe kerül egy alkalom?</h3>
+                    <p class="faq-answer">Egy személyi edzés 7.000 Ft. Csomagokban kedvezőbb áron vehető igénybe. Az első konzultáció ingyenes.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Kezdőként is jelentkezhetek?</h3>
+                    <p class="faq-answer">Igen, kifejezetten kezdőknek is szól a szolgáltatásom. Türelmesen megtanítom a helyes technikát és az alapokat.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Hogyan tudok jelentkezni?</h3>
+                    <p class="faq-answer">Írj nekem emailben vagy Instagramon, és egyeztetünk egy időpontot az első ingyenes konzultációra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA panel -->
+    <section class="section compact cta-panel-section">
+        <div class="container">
+            <div class="cta-panel">
+                <span class="cta-panel-badge">KÉSZEN ÁLLSZ?</span>
+                <h2 class="cta-panel-title">Kezdjük el úgy, hogy végre tudod, mit csinálsz.</h2>
+                <p class="cta-panel-text">Írj pár sort a célodról, én pedig segítek kiválasztani a megfelelő első lépést.</p>
+                <div class="cta-panel-buttons">
+                    <a href="kapcsolat.html" class="btn btn-primary btn-large">Jelentkezem konzultációra</a>
+                    <a href="szolgaltatasok.html#arak" class="btn btn-secondary btn-large">Megnézem az árakat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">Nádasdi Zoltán</h3>
+                    <p class="footer-text">Személyi edző</p>
+                    <p class="footer-text">Segítek elérni a céljaidat személyre szabott edzéstervekkel és folyamatos támogatással.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Gyors linkek</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="rolam.html">Rólam</a></li>
+                        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                        <li><a href="cikkek.html">Cikkek</a></li>
+                        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Kapcsolat</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:info@nadasdizoltan.hu">info@nadasdizoltan.hu</a>
+                        </li>
+                        <li>
+                            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <a href="https://instagram.com/nadasdizoltan" target="_blank">@nadasdizoltan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nádasdi Zoltán. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

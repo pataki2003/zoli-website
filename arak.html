@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=szolgaltatasok.html#arak">
+    <meta name="description" content="Az árak a Szolgáltatások oldalon találhatók.">
+    <title>Átirányítás - Nádasdi Zoltán</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .redirect-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2c5f8d 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .redirect-content {
+            max-width: 600px;
+        }
+        .redirect-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .redirect-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .redirect-text {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .redirect-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #1e3a8a;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .redirect-button:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-page">
+        <div class="redirect-content">
+            <div class="redirect-icon">⟳</div>
+            <h1 class="redirect-title">Átirányítás...</h1>
+            <p class="redirect-text">Az árak mostantól a Szolgáltatások oldalon találhatók. Automatikusan átirányítunk...</p>
+            <a href="szolgaltatasok.html#arak" class="redirect-button">Tovább a Szolgáltatásokhoz</a>
+        </div>
+    </div>
+    
+    <script>
+        // Automatikus átirányítás 1 másodperc után
+        setTimeout(function() {
+            window.location.href = 'szolgaltatasok.html#arak';
+        }, 1000);
+    </script>
+</body>
+</html>
