@@ -701,7 +701,7 @@ button {
     background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-dark) 100%);
     color: var(--color-white);
     border-radius: var(--radius-2xl);
-    padding: var(--spacing-4xl) var(--spacing-3xl);
+    padding: 56px 48px;
     text-align: center;
     max-width: var(--container-max-width);
     margin: 0 auto;
@@ -2400,10 +2400,11 @@ button {
     background: var(--color-white);
     border: 2px solid var(--color-accent);
     border-radius: var(--radius-xl);
-    padding: var(--spacing-3xl);
+    padding: 40px 48px;
     box-shadow: 0 8px 20px rgba(163, 230, 53, 0.15);
     text-align: center;
-    margin-bottom: var(--spacing-3xl);
+    max-width: 920px;
+    margin: 0 auto;
 }
 
 .assessment-panel-icon {
@@ -2422,50 +2423,107 @@ button {
     color: var(--color-dark);
 }
 
+/* Assessment title and text classes (used in HTML) */
+.assessment-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.assessment-text {
+    color: var(--color-text-light);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: 24px;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Legacy support */
 .assessment-panel-title {
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
     color: var(--color-dark);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .assessment-panel-text {
     color: var(--color-text-light);
     font-size: var(--font-size-base);
     line-height: var(--line-height-relaxed);
-    margin-bottom: var(--spacing-xl);
-    max-width: 600px;
+    margin-bottom: 24px;
+    max-width: 680px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Info Panels */
+/* Info Panels Grid */
+.info-panels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
 .info-panels {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-2xl);
-    margin-bottom: var(--spacing-3xl);
+    gap: 20px;
+    max-width: 920px;
+    margin: 0 auto;
 }
 
 .info-panel {
     background: var(--color-white);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
-    padding: var(--spacing-2xl);
+    padding: 28px 32px;
     box-shadow: var(--shadow-sm);
+}
+
+.info-panel-icon {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
 }
 
 .info-panel-title {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     color: var(--color-dark);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.info-panel-text {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
+    margin: 0;
+}
+
+.info-panel-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-panel-list li {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    margin-bottom: 8px;
 }
 
-.info-panel-title svg {
+.info-panel-list li:last-child {
+    margin-bottom: 0;
+}
+
+.info-panel-list .icon {
     color: var(--color-accent-dark);
     flex-shrink: 0;
 }
@@ -2977,9 +3035,10 @@ button {
         display: none;
     }
     
-    .info-panels {
+    .info-panels,
+    .info-panels-grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        gap: 16px;
     }
     
     /* Message Page - Tablet */
@@ -3171,7 +3230,7 @@ button {
     
     /* CTA Panel */
     .cta-panel {
-        padding: var(--spacing-3xl) var(--spacing-xl);
+        padding: 36px 22px;
     }
     
     .cta-panel-title {
@@ -3372,7 +3431,7 @@ button {
     }
     
     .assessment-panel {
-        padding: var(--spacing-2xl) var(--spacing-lg);
+        padding: 28px 20px;
     }
     
     .assessment-panel-icon {
@@ -3385,8 +3444,26 @@ button {
         height: 40px;
     }
     
+    .assessment-title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .assessment-text {
+        font-size: var(--font-size-sm);
+        margin-bottom: 20px;
+    }
+    
+    .info-panels-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
     .info-panel {
-        padding: var(--spacing-xl);
+        padding: 22px 18px;
+    }
+    
+    .info-panel-list li {
+        margin-bottom: 6px;
     }
     
     /* Message Page - Mobile */
