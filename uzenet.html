@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Írj üzenetet Nádasdi Zoltánnak - Kérdezz bátran, ha még nem vagy biztos az időpontfoglalásban.">
+    <title>Üzenetküldés - Nádasdi Zoltán</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header és Navigáció -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1 class="logo">Nádasdi Zoltán</h1>
+                    <p class="logo-subtitle">Személyi Edző</p>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Menü megnyitása">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Főoldal</a></li>
+                    <li><a href="rolam.html" class="nav-link">Rólam</a></li>
+                    <li><a href="szolgaltatasok.html" class="nav-link">Szolgáltatások</a></li>
+                    <li><a href="cikkek.html" class="nav-link">Cikkek</a></li>
+                    <li><a href="kapcsolat.html" class="nav-link">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Üzenetküldés</h1>
+            <p class="page-subtitle">Írj pár sort arról, miben szeretnél segítséget, és hamarosan felveszem veled a kapcsolatot.</p>
+        </div>
+    </section>
+
+    <!-- Üzenetküldő szekció -->
+    <section class="section compact message-section">
+        <div class="container">
+            <div class="message-grid">
+                <!-- Magyarázó panel -->
+                <div class="message-info">
+                    <div class="section-header compact">
+                        <span class="badge badge-light">Kérdezz bátran</span>
+                        <h2 class="section-title">Még kérdeznél időpontfoglalás előtt?</h2>
+                        <p>Ha még nem vagy biztos benne, melyik csomag lenne jó neked, vagy előbb kérdeznél valamit, küldj üzenetet. Röviden írd le a célodat, a kérdésedet vagy azt, miben szeretnél segítséget.</p>
+                    </div>
+
+                    <div class="message-benefits">
+                        <div class="message-benefit">
+                            <div class="message-benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="message-benefit-text">
+                                <h3>Gyors válasz</h3>
+                                <p>24-48 órán belül válaszolok minden megkeresésre.</p>
+                            </div>
+                        </div>
+
+                        <div class="message-benefit">
+                            <div class="message-benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="message-benefit-text">
+                                <h3>Személyes válasz</h3>
+                                <p>Minden kérdésre egyedileg válaszolok.</p>
+                            </div>
+                        </div>
+
+                        <div class="message-benefit">
+                            <div class="message-benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <div class="message-benefit-text">
+                                <h3>Nincs kötelezettség</h3>
+                                <p>Nem kell rögtön időpontot foglalnod.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kapcsolati űrlap -->
+                <div class="message-form-wrapper">
+                    <div class="form-header">
+                        <span class="badge badge-light">Üzenet</span>
+                        <h2 class="section-title">Küldd el az üzeneted</h2>
+                        <p>Töltsd ki az űrlapot, és hamarosan felveszem veled a kapcsolatot!</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Név *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                placeholder="Teljes neved"
+                                required
+                            >
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email cím *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="pelda@email.com"
+                                required
+                            >
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefonszám (opcionális)</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="form-input"
+                                placeholder="+36 20 123 4567"
+                            >
+                            <p class="form-hint">Ha szeretnél, add meg, de emailben is elérsz.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="goal" class="form-label">Miben segíthetek? *</label>
+                            <select id="goal" name="goal" class="form-select" required>
+                                <option value="">Válassz...</option>
+                                <option value="personal-training">Személyi edzés</option>
+                                <option value="consultation">Első konzultáció / Állapotfelmérés</option>
+                                <option value="online-plan">Online edzésterv</option>
+                                <option value="nutrition">Étrend séma</option>
+                                <option value="all-in">All In csomag</option>
+                                <option value="other">Egyéb kérdés</option>
+                            </select>
+                            <span class="form-error" id="goalError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Üzenet *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-textarea" 
+                                rows="5" 
+                                placeholder="Írd le röviden a céljaidat, kérdéseidet vagy bármit, amit tudnom kell..."
+                                required
+                            ></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span>Elfogadom az adatkezelési tájékoztatót *</span>
+                            </label>
+                            <span class="form-error" id="privacyError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full">
+                            Üzenet küldése
+                        </button>
+
+                        <p class="form-note">A *-gal jelölt mezők kitöltése kötelező.</p>
+                    </form>
+
+                    <!-- Sikeres üzenet (kezdetben rejtett) -->
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Köszönöm az üzeneted!</h3>
+                        <p>Hamarosan felveszem veled a kapcsolatot. Nézd meg a spam mappát is, ha nem találod az emailemet!</p>
+                        <button id="sendAnother" class="btn btn-secondary">Új üzenet küldése</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternatív kapcsolatfelvétel -->
+    <section class="section compact alternative-contact-section">
+        <div class="container">
+            <div class="section-header compact centered">
+                <h2 class="section-title">Vagy vedd fel velem a kapcsolatot közvetlenül</h2>
+            </div>
+            <div class="alternative-contact-grid">
+                <div class="contact-method-card">
+                    <div class="contact-method-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:nadasdizoltan1773@gmail.com">nadasdizoltan1773@gmail.com</a>
+                    <p class="text-small">Válaszidő: 24-48 órán belül</p>
+                </div>
+
+                <div class="contact-method-card">
+                    <div class="contact-method-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                    <h3>Instagram</h3>
+                    <a href="https://instagram.com/zoli.nadasdi" target="_blank">@zoli.nadasdi</a>
+                    <p class="text-small">Kövesd a napi tippeket!</p>
+                </div>
+
+                <div class="contact-method-card">
+                    <div class="contact-method-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3>Időpontfoglalás</h3>
+                    <a href="kapcsolat.html">Foglalj konzultációt</a>
+                    <p class="text-small">Ha már biztos vagy benne</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">Nádasdi Zoltán</h3>
+                    <p class="footer-text">Személyi edző</p>
+                    <p class="footer-text">Segítek elérni a céljaidat személyre szabott edzéstervekkel és folyamatos támogatással.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Gyors linkek</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="rolam.html">Rólam</a></li>
+                        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                        <li><a href="cikkek.html">Cikkek</a></li>
+                        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Kapcsolat</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:nadasdizoltan1773@gmail.com">nadasdizoltan1773@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <a href="https://instagram.com/zoli.nadasdi" target="_blank">@zoli.nadasdi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nádasdi Zoltán. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
