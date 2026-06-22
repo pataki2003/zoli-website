@@ -2689,6 +2689,229 @@ button {
 }
 
 /* ============================================
+   BOOKING FLOW PAGE (foglalas.html) - Időpontfoglalási folyamat
+   ============================================ */
+
+/* Booking Flow Section */
+.booking-flow-section {
+    background: transparent;
+}
+
+.booking-flow-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
+}
+
+/* Booking Flow Card */
+.booking-flow-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-3xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-flow-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.booking-flow-card.primary {
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 8px 20px rgba(163, 230, 53, 0.15);
+}
+
+.booking-flow-card.primary:hover {
+    box-shadow: 0 12px 28px rgba(163, 230, 53, 0.25);
+}
+
+/* Booking Flow Number */
+.booking-flow-number {
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    width: 48px;
+    height: 48px;
+    background: var(--color-accent);
+    color: var(--color-dark);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    box-shadow: 0 4px 12px rgba(163, 230, 53, 0.3);
+}
+
+/* Booking Flow Icon */
+.booking-flow-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-dark) 100%);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.booking-flow-icon svg {
+    color: var(--color-white);
+}
+
+.booking-flow-card.primary .booking-flow-icon {
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+}
+
+.booking-flow-card.primary .booking-flow-icon svg {
+    color: var(--color-dark);
+}
+
+/* Booking Flow Content */
+.booking-flow-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.booking-flow-text {
+    color: var(--color-text-light);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-lg);
+    flex-grow: 1;
+}
+
+/* Booking Flow Features */
+.booking-flow-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-xl) 0;
+}
+
+.booking-flow-features li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.booking-flow-features li:last-child {
+    margin-bottom: 0;
+}
+
+.booking-flow-features .icon-check {
+    color: var(--color-accent-dark);
+    flex-shrink: 0;
+}
+
+/* Booking Instruction Box */
+.booking-instruction {
+    background: linear-gradient(135deg, rgba(163, 230, 53, 0.1) 0%, rgba(132, 204, 22, 0.05) 100%);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-2xl);
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: flex-start;
+}
+
+.booking-instruction-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--color-accent);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.booking-instruction-icon svg {
+    color: var(--color-dark);
+}
+
+.booking-instruction-content {
+    flex: 1;
+}
+
+.booking-instruction-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.booking-instruction-text {
+    color: var(--color-text);
+    line-height: var(--line-height-relaxed);
+    margin: 0;
+}
+
+/* Why Both Section */
+.why-both-section {
+    background: transparent;
+}
+
+.why-both-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-2xl);
+}
+
+.why-both-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-2xl);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.why-both-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+}
+
+.why-both-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-dark) 100%);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.why-both-icon svg {
+    color: var(--color-white);
+}
+
+.why-both-card h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.why-both-card p {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
+    margin: 0;
+}
+
+/* ============================================
    RESPONSIVE DESIGN - TABLET
    ============================================ */
 @media (max-width: 1024px) {
@@ -2778,6 +3001,26 @@ button {
     .contact-details-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
+    }
+    
+    /* Booking Flow - Tablet */
+    .booking-flow-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .why-both-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .booking-instruction {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .booking-instruction-icon {
+        margin: 0 auto;
     }
 }
 
@@ -3177,6 +3420,57 @@ button {
     /* Contact Details - Mobile */
     .contact-hours-panel {
         padding: var(--spacing-xl);
+    }
+    
+    /* Booking Flow - Mobile */
+    .booking-flow-card {
+        padding: var(--spacing-2xl);
+    }
+    
+    .booking-flow-number {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-xl);
+        top: var(--spacing-md);
+        right: var(--spacing-md);
+    }
+    
+    .booking-flow-icon {
+        width: 64px;
+        height: 64px;
+    }
+    
+    .booking-flow-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .booking-flow-title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .booking-instruction {
+        padding: var(--spacing-xl);
+    }
+    
+    .booking-instruction-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .booking-instruction-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .why-both-icon {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .why-both-icon svg {
+        width: 28px;
+        height: 28px;
     }
 }
 

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Foglalj időpontot Nádasdi Zoltánnal - Két egyszerű lépés az első konzultációhoz.">
+    <title>Időpontfoglalás - Nádasdi Zoltán</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header és Navigáció -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1 class="logo">Nádasdi Zoltán</h1>
+                    <p class="logo-subtitle">Személyi Edző</p>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Menü megnyitása">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Főoldal</a></li>
+                    <li><a href="rolam.html" class="nav-link">Rólam</a></li>
+                    <li><a href="szolgaltatasok.html" class="nav-link">Szolgáltatások</a></li>
+                    <li><a href="cikkek.html" class="nav-link">Cikkek</a></li>
+                    <li><a href="kapcsolat.html" class="nav-link">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Időpontfoglalás</h1>
+            <p class="page-subtitle">Válassz egy időpontot az első konzultációra, majd töltsd ki az állapotfelmérőt, hogy fel tudjak készülni rád.</p>
+        </div>
+    </section>
+
+    <!-- Foglalási folyamat -->
+    <section class="section compact booking-flow-section">
+        <div class="container">
+            <div class="section-header compact centered">
+                <span class="badge">FOGLALÁS</span>
+                <h2 class="section-title">Két egyszerű lépés</h2>
+                <p>Kövesd az alábbi lépéseket az első konzultációhoz. Mindkét lépés fontos a sikeres induláshoz.</p>
+            </div>
+
+            <div class="booking-flow-grid">
+                <!-- 1. lépés: Időpont foglalás -->
+                <div class="booking-flow-card primary">
+                    <div class="booking-flow-number">1</div>
+                    <div class="booking-flow-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="booking-flow-title">Foglalj időpontot</h3>
+                    <p class="booking-flow-text">A gombra kattintva új lapon megnyílik a Google Calendar időpontfoglaló. Válassz egy számodra megfelelő időpontot az első konzultációra.</p>
+                    <ul class="booking-flow-features">
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Ingyenes első konzultáció
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Azonnali visszaigazolás
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Új lapon nyílik meg
+                        </li>
+                    </ul>
+                    <!-- TODO: cseréld ki a valódi Google Calendar booking linkre -->
+                    <a href="https://calendar.app.google/37BEUibsdtbyCGGm7"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-primary btn-large btn-full">
+                        Megnyitom az időpontfoglalót
+                    </a>
+                </div>
+
+                <!-- 2. lépés: Állapotfelmérő -->
+                <div class="booking-flow-card">
+                    <div class="booking-flow-number">2</div>
+                    <div class="booking-flow-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="booking-flow-title">Töltsd ki az állapotfelmérőt</h3>
+                    <p class="booking-flow-text">Miután lefoglaltad az időpontot, töltsd ki a rövid állapotfelmérőt. Ez segít abban, hogy az első konzultáción már célzottan tudjunk beszélni a céljaidról, edzésmúltadról és esetleges sérüléseidről.</p>
+                    <ul class="booking-flow-features">
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            5-8 perc kitöltési idő
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Személyre szabott konzultáció
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Biztonságos adatkezelés
+                        </li>
+                    </ul>
+                    <a href="allapotfelmeres.html" class="btn btn-secondary btn-large btn-full">
+                        Tovább az állapotfelmérőre
+                    </a>
+                </div>
+            </div>
+
+            <!-- Instrukciós box -->
+            <div class="booking-instruction">
+                <div class="booking-instruction-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                </div>
+                <div class="booking-instruction-content">
+                    <h3 class="booking-instruction-title">Fontos sorrend</h3>
+                    <p class="booking-instruction-text">Először foglalj időpontot, és csak utána töltsd ki az állapotfelmérőt. Így az űrlapon megadhatod, melyik időpontra jelentkeztél.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Miért fontos mindkét lépés? -->
+    <section class="section compact why-both-section">
+        <div class="container">
+            <div class="section-header compact centered">
+                <h2 class="section-title">Miért fontos mindkét lépés?</h2>
+            </div>
+            <div class="why-both-grid">
+                <div class="why-both-card">
+                    <div class="why-both-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Személyre szabott figyelem</h3>
+                    <p>Az állapotfelmérő segít, hogy már az első találkozón a te céljaidra és helyzetedre fókuszáljunk.</p>
+                </div>
+
+                <div class="why-both-card">
+                    <div class="why-both-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Hatékonyabb konzultáció</h3>
+                    <p>Nem kell az alapoknál kezdeni, hanem rögtön a lényegre térhetünk.</p>
+                </div>
+
+                <div class="why-both-card">
+                    <div class="why-both-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Biztonságos indulás</h3>
+                    <p>Előre tudom, ha van sérülésed vagy egészségügyi kérdés, amire figyelni kell.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">Nádasdi Zoltán</h3>
+                    <p class="footer-text">Személyi edző</p>
+                    <p class="footer-text">Segítek elérni a céljaidat személyre szabott edzéstervekkel és folyamatos támogatással.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Gyors linkek</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="rolam.html">Rólam</a></li>
+                        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                        <li><a href="cikkek.html">Cikkek</a></li>
+                        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Kapcsolat</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:nadasdizoltan1773@gmail.com">nadasdizoltan1773@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <a href="https://instagram.com/zoli.nadasdi" target="_blank">@zoli.nadasdi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nádasdi Zoltán. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
