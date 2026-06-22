@@ -1161,15 +1161,15 @@ button {
 }
 
 .pricing-section {
-    background: var(--color-white);
+    background: transparent;
 }
 
 .pricing-section.alt {
-    background: var(--color-bg-section);
+    background: transparent;
 }
 
 .pricing-section.featured-section {
-    background: var(--color-bg-section);
+    background: transparent;
 }
 
 .pricing-grid {
@@ -1327,7 +1327,7 @@ button {
 }
 
 .comparison-section {
-    background: var(--color-white);
+    background: transparent;
 }
 
 .comparison-table-wrapper {
@@ -1594,7 +1594,7 @@ button {
 
 /* Value section */
 .value-section {
-    background: var(--color-white);
+    background: transparent;
 }
 
 .value-grid {
