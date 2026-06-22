@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hasznos cikkek és tippek az edzésről, táplálkozásról és egészséges életmódról - Nádasdi Zoltán.">
-    <title>Cikkek - Nádasdi Zoltán</title>
+    <meta name="description" content="Hasznos cikkek edzésről, technikáról, táplálkozásról és kezdőbarát fejlődésről - Nádasdi Zoltán személyi edző">
+    <title>Cikkek és tippek | Nádasdi Zoltán személyi edző</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -38,211 +38,69 @@
     <section class="page-hero">
         <div class="container">
             <h1 class="page-title">Cikkek és tippek</h1>
-            <p class="page-subtitle">Hasznos információk az edzésről, táplálkozásról és egészséges életmódról</p>
+            <p class="page-subtitle">Hasznos tartalmak edzésről, technikáról, táplálkozásról és fejlődésről.</p>
         </div>
     </section>
 
-    <!-- Bevezető szekció -->
+    <!-- Search and Filter -->
     <section class="section compact">
         <div class="container">
-            <div class="articles-intro">
-                <p>Ebben a szekcióban rendszeresen osztok meg hasznos tippeket, tanácsokat és információkat, amelyek segítenek elérni a fitnesz céljaidat. Maradj velem és tanulj folyamatosan!</p>
+            <!-- Search Bar -->
+            <div class="blog-search">
+                <input
+                    type="text"
+                    id="searchInput"
+                    class="search-input"
+                    placeholder="Keresés cikkek között..."
+                >
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="blog-categories">
+                <button class="category-btn active" data-category="Összes">Összes</button>
+                <button class="category-btn" data-category="Kezdőknek">Kezdőknek</button>
+                <button class="category-btn" data-category="Edzéstechnika">Edzéstechnika</button>
+                <button class="category-btn" data-category="Táplálkozás">Táplálkozás</button>
+                <button class="category-btn" data-category="Motiváció">Motiváció</button>
+                <button class="category-btn" data-category="Sérülésmegelőzés">Sérülésmegelőzés</button>
+                <button class="category-btn" data-category="Edzésterv">Edzésterv</button>
             </div>
         </div>
     </section>
 
-    <!-- Cikkek lista -->
-    <section class="section compact articles-section">
+    <!-- Articles List -->
+    <section class="section compact">
         <div class="container">
-            <div class="articles-grid">
-                <!-- Cikk 1 - Placeholder -->
-                <article class="article-card">
-                    <div class="article-image placeholder-image">
-                        <div class="placeholder-content">
-                            <span style="font-size: 3rem;">💪</span>
-                            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.9;">Cikk hamarosan</p>
-                        </div>
-                        <span class="article-category">Edzés</span>
-                    </div>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="article-date">2026. március 15.</span>
-                            <span class="article-read-time">5 perc olvasás</span>
-                        </div>
-                        <h3 class="article-title">5 tipp kezdőknek az edzőteremben</h3>
-                        <p class="article-excerpt">Ha most kezded az edzést, ezek a tippek segítenek elkerülni a leggyakoribb hibákat és gyorsabban elérni a céljaidat. Tudd meg, mire figyelj az első hetekben!</p>
-                        <a href="#" class="article-link">Tovább olvasom →</a>
-                    </div>
-                </article>
-
-                <!-- Cikk 2 - Placeholder -->
-                <article class="article-card">
-                    <div class="article-image placeholder-image">
-                        <div class="placeholder-content">
-                            <span style="font-size: 3rem;">🥗</span>
-                            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.9;">Cikk hamarosan</p>
-                        </div>
-                        <span class="article-category">Táplálkozás</span>
-                    </div>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="article-date">2026. március 10.</span>
-                            <span class="article-read-time">7 perc olvasás</span>
-                        </div>
-                        <h3 class="article-title">Táplálkozási alapok kezdőknek</h3>
-                        <p class="article-excerpt">A sikeres fogyás vagy izomépítés 70%-ban a táplálkozáson múlik. Ebben a cikkben megismerheted az alapvető táplálkozási elveket, amelyek segítenek elérni a céljaidat.</p>
-                        <a href="#" class="article-link">Tovább olvasom →</a>
-                    </div>
-                </article>
-
-                <!-- Cikk 3 - Placeholder -->
-                <article class="article-card">
-                    <div class="article-image placeholder-image">
-                        <div class="placeholder-content">
-                            <span style="font-size: 3rem;">🎯</span>
-                            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.9;">Cikk hamarosan</p>
-                        </div>
-                        <span class="article-category">Motiváció</span>
-                    </div>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="article-date">2026. március 5.</span>
-                            <span class="article-read-time">6 perc olvasás</span>
-                        </div>
-                        <h3 class="article-title">Hogyan maradj motivált hosszú távon?</h3>
-                        <p class="article-excerpt">A motiváció fenntartása az egyik legnagyobb kihívás. Ebből a cikkből megtudhatod, hogyan építs fel olyan szokásokat, amelyek segítenek kitartani a nehéz időkben is.</p>
-                        <a href="#" class="article-link">Tovább olvasom →</a>
-                    </div>
-                </article>
+            <!-- Loading State -->
+            <div id="loadingState" class="loading-state">
+                <div class="spinner"></div>
+                <p>Cikkek betöltése...</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Kategóriák szekció -->
-    <section class="section compact categories-section">
-        <div class="container">
-            <div class="section-header compact">
-                <span class="badge badge-light">Témakörök</span>
-                <h2 class="section-title">Cikk kategóriák</h2>
+            <!-- Error State -->
+            <div id="errorState" class="error-state" style="display: none;">
+                <p>Hiba a cikkek betöltésekor. Próbáld újra később.</p>
             </div>
-            <div class="categories-grid">
-                <div class="category-card">
-                    <div class="category-icon">💪</div>
-                    <h3 class="category-title">Edzés</h3>
-                    <p class="category-description">Gyakorlatok, edzéstervek, technikák és tippek az edzőteremhez.</p>
-                    <span class="category-count">Hamarosan</span>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">🥗</div>
-                    <h3 class="category-title">Táplálkozás</h3>
-                    <p class="category-description">Étkezési tanácsok, receptek és táplálkozási alapok.</p>
-                    <span class="category-count">Hamarosan</span>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">🎯</div>
-                    <h3 class="category-title">Motiváció</h3>
-                    <p class="category-description">Mentális felkészülés, célkitűzés és kitartás.</p>
-                    <span class="category-count">Hamarosan</span>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">🧘</div>
-                    <h3 class="category-title">Regeneráció</h3>
-                    <p class="category-description">Pihenés, nyújtás, alvás és stresszkezelés.</p>
-                    <span class="category-count">Hamarosan</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Newsletter feliratkozás -->
-    <section class="section compact newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <div class="newsletter-text">
-                    <span class="badge">Hírlevél</span>
-                    <h2 class="section-title">Ne maradj le az új cikkekről!</h2>
-                    <p>Iratkozz fel a hírlevelemre és értesülj elsőként az új cikkekről, tippekről és exkluzív tartalmakról.</p>
-                </div>
-                <div class="newsletter-form">
-                    <form id="newsletterForm" class="form-inline">
-                        <input type="email" placeholder="Email címed" required class="form-input">
-                        <button type="submit" class="btn btn-primary">Feliratkozom</button>
-                    </form>
-                    <p class="newsletter-note">Bármikor leiratkozhatsz. Adataidat bizalmasan kezelem.</p>
-                </div>
+            <!-- Empty State -->
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                <h3>Nincs találat</h3>
+                <p>Próbálj meg más keresési kifejezést vagy kategóriát.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Népszerű témák -->
-    <section class="section compact topics-section">
-        <div class="container">
-            <div class="section-header compact">
-                <span class="badge badge-light">Népszerű témák</span>
-                <h2 class="section-title">Miről olvashatsz hamarosan?</h2>
-            </div>
-            <div class="topics-grid">
-                <div class="topic-item">
-                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Helyes guggolás technika</span>
-                </div>
-                <div class="topic-item">
-                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Fehérje bevitel optimalizálása</span>
-                </div>
-                <div class="topic-item">
-                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Fogyás vs. izomépítés</span>
-                </div>
-                <div class="topic-item">
-                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Bemelegítés fontossága</span>
-                </div>
-                <div class="topic-item">
-                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Alvás és regeneráció</span>
-                </div>
-                <div class="topic-item">
-                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Kiegészítők használata</span>
-                </div>
-                <div class="topic-item">
-                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Edzésterv készítése</span>
-                </div>
-                <div class="topic-item">
-                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Gyakori edzőtermi hibák</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Jövőbeli funkciók info -->
-    <section class="section compact future-features">
-        <div class="container">
-            <div class="info-box">
-                <div class="info-icon">ℹ️</div>
-                <div class="info-content">
-                    <h3>Fejlesztés alatt</h3>
-                    <p>Ez a szekció folyamatosan bővül. Hamarosan rendszeresen töltenek fel új cikkeket, amelyek segítenek az edzésben, táplálkozásban és motivációban. Kövess Instagramon vagy iratkozz fel a hírlevelemre, hogy ne maradj le semmiről!</p>
-                </div>
+            <!-- Posts Grid -->
+            <div id="postsGrid" class="articles-grid" style="display: none;">
+                <!-- Articles will be inserted here by JavaScript -->
             </div>
         </div>
     </section>
@@ -308,6 +166,39 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/blog.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Initialize blog when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load published posts
+            Blog.loadPublishedPosts();
+
+            // Setup search
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    Blog.searchPosts(e.target.value);
+                });
+            }
+
+            // Setup category filters
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            categoryButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    // Filter by category
+                    const category = btn.dataset.category;
+                    Blog.filterByCategory(category);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
