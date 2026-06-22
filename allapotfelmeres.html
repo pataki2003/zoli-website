@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Állapotfelmérő űrlap - Nádasdi Zoltán személyi edző">
+    <title>Állapotfelmérő űrlap - Nádasdi Zoltán</title>
+    <link rel="stylesheet" href="css/style.css?v=5.0">
+</head>
+<body>
+    <!-- Header és Navigáció -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1 class="logo">Nádasdi Zoltán</h1>
+                    <p class="logo-subtitle">Személyi Edző</p>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Menü megnyitása">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Főoldal</a></li>
+                    <li><a href="rolam.html" class="nav-link">Rólam</a></li>
+                    <li><a href="szolgaltatasok.html" class="nav-link">Szolgáltatások</a></li>
+                    <li><a href="cikkek.html" class="nav-link">Cikkek</a></li>
+                    <li><a href="kapcsolat.html" class="nav-link">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero compact">
+        <div class="container">
+            <h1 class="page-title">Állapotfelmérő űrlap</h1>
+            <p class="page-subtitle">Ha már foglaltál konzultációs időpontot, kérlek töltsd ki ezt az űrlapot, hogy fel tudjak készülni az első beszélgetésre.</p>
+        </div>
+    </section>
+
+    <!-- Fő tartalmi panel -->
+    <section class="section compact">
+        <div class="container">
+            <div class="assessment-panel">
+                <span class="badge badge-light">Következő lépés</span>
+                <h2 class="assessment-title">A következő lépés: állapotfelmérés</h2>
+                <p class="assessment-text">Az űrlap kitöltése körülbelül 5-8 percet vesz igénybe. A válaszaid segítenek abban, hogy már az első konzultáción célzottabban tudjunk beszélni az edzésmúltadról, céljaidról, esetleges sérüléseidről és arról, milyen támogatásra van szükséged.</p>
+                
+                <!-- TODO: cseréld ki a valódi Google Form linkre -->
+                <a href="https://forms.gle/IDE-ILLESZD-A-GOOGLE-FORM-LINKET" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+                    Kitöltöm az állapotfelmérőt
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Információs blokkok -->
+    <section class="section compact">
+        <div class="container">
+            <div class="info-panels-grid">
+                <!-- Mikor töltsd ki? -->
+                <div class="info-panel">
+                    <div class="info-panel-icon">📅</div>
+                    <h3 class="info-panel-title">Mikor töltsd ki?</h3>
+                    <p class="info-panel-text">Lehetőleg közvetlenül a foglalás után, de legkésőbb az első konzultáció előtt.</p>
+                </div>
+
+                <!-- Mit kérdez az űrlap? -->
+                <div class="info-panel">
+                    <div class="info-panel-icon">📋</div>
+                    <h3 class="info-panel-title">Mit kérdez az űrlap?</h3>
+                    <ul class="info-panel-list">
+                        <li>
+                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Céljaid</span>
+                        </li>
+                        <li>
+                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Edzésmúltad</span>
+                        </li>
+                        <li>
+                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Jelenlegi aktivitásod</span>
+                        </li>
+                        <li>
+                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Esetleges sérülések vagy fájdalmak</span>
+                        </li>
+                        <li>
+                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Időbeosztásod</span>
+                        </li>
+                        <li>
+                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Miben szeretnél segítséget</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA panel -->
+    <section class="section compact cta-panel-section">
+        <div class="container">
+            <div class="cta-panel">
+                <span class="cta-panel-badge">KÉSZEN ÁLLSZ?</span>
+                <h2 class="cta-panel-title">Kezdjük el úgy, hogy végre tudod, mit csinálsz.</h2>
+                <p class="cta-panel-text">Írj pár sort a célodról, én pedig segítek kiválasztani a megfelelő első lépést.</p>
+                <div class="cta-panel-buttons">
+                    <a href="kapcsolat.html" class="btn btn-primary btn-large">Jelentkezem konzultációra</a>
+                    <a href="szolgaltatasok.html#arak" class="btn btn-secondary btn-large">Megnézem az árakat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">Nádasdi Zoltán</h3>
+                    <p class="footer-text">Személyi edző</p>
+                    <p class="footer-text">Segítek elérni a céljaidat személyre szabott edzéstervekkel és folyamatos támogatással.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Gyors linkek</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="rolam.html">Rólam</a></li>
+                        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                        <li><a href="cikkek.html">Cikkek</a></li>
+                        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Kapcsolat</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:info@nadasdizoltan.hu">info@nadasdizoltan.hu</a>
+                        </li>
+                        <li>
+                            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <a href="https://instagram.com/nadasdizoltan" target="_blank">@nadasdizoltan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nádasdi Zoltán. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

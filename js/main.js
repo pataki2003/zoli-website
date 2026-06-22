@@ -290,10 +290,46 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (targetElement) {
                 event.preventDefault();
+                
+                // Close mobile menu if open
+                const navToggle = document.getElementById('navToggle');
+                const navMenu = document.getElementById('navMenu');
+                if (navToggle && navMenu && navMenu.classList.contains('active')) {
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+                
+                // Smooth scroll to target
                 targetElement.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
                 });
+                
+                // Add a small offset for better visibility
+                setTimeout(() => {
+                    window.scrollBy(0, -20);
+                }, 300);
+            }
+        });
+    });
+    
+    // Special handling for scroll-to-form buttons
+    const scrollToFormButtons = document.querySelectorAll('.scroll-to-form');
+    scrollToFormButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            const href = this.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                event.preventDefault();
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                }
             }
         });
     });

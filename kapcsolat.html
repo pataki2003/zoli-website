@@ -42,8 +42,125 @@
         </div>
     </section>
 
+    <!-- Hogyan tudsz jelentkezni szekció -->
+    <section class="section compact booking-section">
+        <div class="container">
+            <div class="section-header compact centered">
+                <span class="badge">JELENTKEZÉS</span>
+                <h2 class="section-title">Hogyan tudsz jelentkezni?</h2>
+                <p>Válaszd ki a számodra legkényelmesebb módot. Mindkét út egyszerű és gyors.</p>
+            </div>
+
+            <div class="booking-options">
+                <!-- Időpont foglalás kártya -->
+                <div class="booking-card primary">
+                    <div class="booking-card-badge">AJÁNLOTT</div>
+                    <div class="booking-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="booking-card-title">Foglalj időpontot</h3>
+                    <p class="booking-card-text">Válassz egy szabad időpontot a naptárból, és foglald le az első ingyenes konzultációdat.</p>
+                    <ul class="booking-card-features">
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Azonnali visszaigazolás
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Ingyenes első konzultáció
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Állapotfelmérő űrlap
+                        </li>
+                    </ul>
+                    <!-- TODO: cseréld ki a valódi Google Calendar booking linkre -->
+                    <a href="https://calendar.google.com/calendar/appointments/IDE-ILLESZD-A-GOOGLE-CALENDAR-LINKET"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-primary btn-large btn-full">
+                        Időpontot foglalok
+                    </a>
+                </div>
+
+                <!-- Üzenet írás kártya -->
+                <div class="booking-card">
+                    <div class="booking-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="booking-card-title">Még kérdeznél előtte?</h3>
+                    <p class="booking-card-text">Ha szeretnél előbb kérdezni vagy egyeztetni, írj nekem üzenetet az alábbi űrlapon.</p>
+                    <ul class="booking-card-features">
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            24 órán belül válaszolok
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Egyedi kérdések
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Rugalmas időpont
+                        </li>
+                    </ul>
+                    <a href="#uzenet" class="btn btn-secondary btn-large btn-full scroll-to-form">
+                        Üzenetet írok
+                    </a>
+                </div>
+            </div>
+
+            <!-- Folyamatábra -->
+            <div class="booking-steps">
+                <div class="booking-steps-header">
+                    <h3>Hogyan zajlik a folyamat?</h3>
+                    <p>Három egyszerű lépésben elindulunk a cél felé.</p>
+                </div>
+                <div class="booking-steps-grid">
+                    <div class="booking-step">
+                        <div class="booking-step-number">1</div>
+                        <h4 class="booking-step-title">Időpont foglalás</h4>
+                        <p class="booking-step-text">Válassz egy szabad időpontot a naptárból, vagy írj nekem üzenetet.</p>
+                    </div>
+                    <div class="booking-step-arrow">→</div>
+                    <div class="booking-step">
+                        <div class="booking-step-number">2</div>
+                        <h4 class="booking-step-title">Állapotfelmérő</h4>
+                        <p class="booking-step-text">Töltsd ki a rövid űrlapot, hogy felkészülhessek a konzultációra.</p>
+                    </div>
+                    <div class="booking-step-arrow">→</div>
+                    <div class="booking-step">
+                        <div class="booking-step-number">3</div>
+                        <h4 class="booking-step-title">Konzultáció</h4>
+                        <p class="booking-step-text">Találkozunk, megbeszéljük a céljaidat és elkészítjük a tervet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Kapcsolat szekció -->
-    <section class="section compact contact-section">
+    <section class="section compact contact-section" id="uzenet">
         <div class="container">
             <div class="contact-grid">
                 <!-- Kapcsolati információk -->
@@ -112,8 +229,8 @@
                 <!-- Kapcsolati űrlap -->
                 <div class="contact-form-wrapper">
                     <div class="form-header">
-                        <span class="badge badge-light">Jelentkezés</span>
-                        <h2 class="section-title">Küldd el az üzeneted</h2>
+                        <span class="badge badge-light">Üzenet</span>
+                        <h2 class="section-title">Írj nekem</h2>
                         <p>Töltsd ki az űrlapot, és hamarosan felveszem veled a kapcsolatot!</p>
                     </div>
 
