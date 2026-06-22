@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cikk szerkesztő - Nádasdi Zoltán személyi edző">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Cikk Szerkesztő - Nádasdi Zoltán</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1 class="logo">Nádasdi Zoltán</h1>
+                    <p class="logo-subtitle">Cikk Szerkesztő</p>
+                </div>
+                
+                <div class="admin-header-actions">
+                    <a href="dashboard.html" class="btn btn-secondary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        Vissza a cikkekhez
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Editor Section -->
+    <section class="section">
+        <div class="container">
+            <div class="admin-editor-wrapper">
+                <h1 class="page-title" id="editorTitle">Új cikk írása</h1>
+
+                <!-- Loading State -->
+                <div id="loadingState" class="admin-loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Cikk betöltése...</p>
+                </div>
+
+                <!-- Error State -->
+                <div id="errorState" class="admin-error" style="display: none;">
+                    <p class="error-message"></p>
+                </div>
+
+                <!-- Editor Form -->
+                <form id="editorForm" class="admin-editor-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="title" class="form-label">Cím *</label>
+                            <input 
+                                type="text" 
+                                id="title" 
+                                name="title" 
+                                class="form-input" 
+                                placeholder="Pl: Hogyan kezdj el edzeni?"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="slug" class="form-label">
+                                Slug (URL-barát azonosító) *
+                                <span class="form-help">Automatikusan generálódik a címből, de szerkeszthető</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="slug" 
+                                name="slug" 
+                                class="form-input" 
+                                placeholder="hogyan-kezdj-el-edzeni"
+                                required
+                                pattern="[a-z0-9-]+"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="excerpt" class="form-label">Rövid leírás</label>
+                            <textarea 
+                                id="excerpt" 
+                                name="excerpt" 
+                                class="form-textarea" 
+                                rows="3"
+                                placeholder="Rövid összefoglaló a cikkről (megjelenik a cikklistában)"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row form-row-2">
+                        <div class="form-group">
+                            <label for="category" class="form-label">Kategória *</label>
+                            <select id="category" name="category" class="form-select" required>
+                                <option value="">Válassz kategóriát</option>
+                                <option value="Kezdőknek">Kezdőknek</option>
+                                <option value="Edzéstechnika">Edzéstechnika</option>
+                                <option value="Táplálkozás">Táplálkozás</option>
+                                <option value="Motiváció">Motiváció</option>
+                                <option value="Sérülésmegelőzés">Sérülésmegelőzés</option>
+                                <option value="Edzésterv">Edzésterv</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="coverImage" class="form-label">Borítókép URL</label>
+                            <input 
+                                type="url" 
+                                id="coverImage" 
+                                name="coverImage" 
+                                class="form-input" 
+                                placeholder="https://example.com/image.jpg"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="content" class="form-label">
+                                Tartalom *
+                                <span class="form-help">Markdown formázás támogatott: # Cím, ## Alcím, **félkövér**, *dőlt*</span>
+                            </label>
+                            <textarea 
+                                id="content" 
+                                name="content" 
+                                class="form-textarea form-textarea-large" 
+                                rows="20"
+                                placeholder="# Cikk címe&#10;&#10;Bevezető bekezdés...&#10;&#10;## Alcím&#10;&#10;További tartalom..."
+                                required
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Státusz</label>
+                            <div class="form-radio-group">
+                                <label class="form-radio">
+                                    <input type="radio" name="status" value="draft" checked>
+                                    <span>Piszkozat</span>
+                                </label>
+                                <label class="form-radio">
+                                    <input type="radio" name="status" value="published">
+                                    <span>Publikált</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="formError" class="error-message" style="display: none;"></div>
+
+                    <div class="form-actions">
+                        <button type="button" id="saveDraftButton" class="btn btn-secondary btn-large">
+                            Piszkozat mentése
+                        </button>
+                        <button type="submit" id="publishButton" class="btn btn-primary btn-large">
+                            Közzététel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nádasdi Zoltán. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <!-- Scripts -->
+    <script src="../js/supabase.js"></script>
+    <script src="../js/admin-auth.js"></script>
+    <script src="../js/admin-editor.js"></script>
+</body>
+</html>
