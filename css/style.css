@@ -4314,3 +4314,17 @@ button {
     gap: var(--spacing-md);
     justify-content: flex-end;
 }
+
+
+/* Admin Login Link (Discreet) */
+.page-hero a[href="admin/login.html"]:hover {
+    color: var(--color-secondary) !important;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .page-hero a[href="admin/login.html"] {
+        display: block;
+        margin-top: 1rem;
+    }
+}
