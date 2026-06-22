@@ -10,8 +10,8 @@
  */
 
 // TODO: Cseréld ki ezeket a valódi Supabase projekt adataira
-const SUPABASE_URL = "IDE_ILLESZD_A_SUPABASE_URLT";
-const SUPABASE_ANON_KEY = "IDE_ILLESZD_A_SUPABASE_ANON_KEYT";
+const SUPABASE_URL = "https://gjvwjpdxmhynrmbglfik.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdqdndqcGR4bWh5bnJtYmdsZmlrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxMTcyNDIsImV4cCI6MjA5NzY5MzI0Mn0.hLCL0VmNMuArUCAPpNv4c4L7nNdZ2H5TpqVmImTIYcQ";
 
 // Supabase client inicializálása
 let supabase = null;
